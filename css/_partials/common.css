@@ -7,9 +7,6 @@ body {
   height: 100vh;
   padding-top: 70px;
 }
-i {
-  color: var(--icon-button-grey);
-}
 /*
 ?---------
 !HEADER

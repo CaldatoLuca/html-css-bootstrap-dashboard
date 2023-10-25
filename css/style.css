@@ -10,6 +10,8 @@
 :root {
   --main-white: #f8f9fa;
   --icon-button-grey: #5b5858;
+  --blue-600: #051e34;
+  --blue-500: #12293e;
 }
 
 /*
@@ -19,4 +21,18 @@
 */
 header {
   background-color: var(--main-white);
+}
+header i {
+  color: var(--icon-button-grey);
+}
+/*
+?---------
+!MAIN
+?---------
+*/
+/* !nav */
+main nav {
+  background-image: url("../img/sidebar-bg.png");
+  background-color: var(--blue-600);
+  color: var(--main-white);
 }
