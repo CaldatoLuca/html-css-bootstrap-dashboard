@@ -1,0 +1,25 @@
+/*
+?---------
+!COMMON
+?---------
+*/
+body {
+  height: 100vh;
+  padding-top: 70px;
+}
+/*
+?---------
+!HEADER
+?---------
+*/
+header {
+  height: 70px;
+}
+/*
+?---------
+!MAIN
+?---------
+*/
+main {
+  height: calc(100%);
+}
