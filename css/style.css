@@ -12,6 +12,7 @@
   --icon-button-grey: #5b5858;
   --blue-600: #051e34;
   --blue-500: #12293e;
+  --blue-300: #165bba;
   --blue-200: #1b72e8;
 }
 
@@ -32,13 +33,15 @@ header i {
 ?---------
 */
 /* !nav */
-main nav {
+main .-lc-left-menu {
   background-image: url("../img/sidebar-bg.png");
   background-color: var(--blue-600);
-  color: var(--main-white);
 }
 
 /* !dashboard */
 main .-lc-dashboard .-lc-dashboard-top {
   background-color: var(--blue-200);
+}
+main .-lc-dashboard .-lc-dashboard-top .-lc-col-content .badge {
+  background-color: var(--blue-300);
 }

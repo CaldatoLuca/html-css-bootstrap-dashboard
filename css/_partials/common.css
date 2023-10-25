@@ -23,3 +23,7 @@ header {
 main {
   height: 100%;
 }
+main .-lc-left-menu,
+main .-lc-dashboard .-lc-dashboard-top {
+  color: var(--main-white);
+}

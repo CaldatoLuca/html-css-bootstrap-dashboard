@@ -88,7 +88,7 @@
     <!-- *corpo principale della pagina -->
     <main class="d-flex">
       <!-- ?navbar a sinistra -->
-      <nav class="flex-shrink-0 p-4 fw-bold">
+      <div class="-lc-left-menu flex-shrink-0 p-4 fw-bold">
         <ul class="list-unstyled d-flex flex-column mb-0 h-100">
           <!-- elemento -->
           <li
@@ -122,18 +122,68 @@
           </li>
           <!-- elemento -->
         </ul>
-      </nav>
+      </div>
       <!-- ?navbar a sinistra/ -->
 
       <!-- ?dashboard principlae -->
       <div class="-lc-dashboard overflow-y-auto flex-grow-1">
         <!-- !top-dashboard -->
-        <div class="-lc-dashboard-top">
+        <div class="-lc-dashboard-top py-2">
           <div class="container-fluid px-3">
+            <!-- !griglia -->
             <div class="row">
-              <div class="col-12 col-md-4">asgasg</div>
-              <div class="col-12 col-md-4">awgag</div>
-              <div class="col-12 col-md-4">gagwa<</div>
+              <!-- blocco griglia -->
+              <div class="col-12 col-md-6">
+                <div
+                  class="-lc-col-content d-flex flex-column justify-content-center"
+                >
+                  <div>
+                    <div class="fs-1 d-inline-block me-2">Boolean</div>
+                    <span class="badge rounded-pill">Piano blaze</span>
+                  </div>
+                  <div>
+                    <nav
+                      style="--bs-breadcrumb-divider: '>'"
+                      aria-label="breadcrumb"
+                    >
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                          <a href="#">
+                            <span class="badge rounded-pill">3 app</span>
+                          </a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                          <span
+                            class="badge rounded-pill d-none d-md-inline-block"
+                            >Boolean mobile app</span
+                          >
+                          <span
+                            class="badge rounded-pill d-none d-md-inline-block"
+                            >Boolean web app</span
+                          >
+                          <span
+                            class="badge rounded-pill d-none d-md-inline-block"
+                            >Boolean blog app</span
+                          >
+                          <span class="badge rounded-pill d-md-none"
+                            ><i class="fa-solid fa-plus"></i
+                          ></span>
+                        </li>
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+
+              <!-- blocco griglia -->
+              <div class="col-12 col-md-3">
+                <div class="-lc-col-content"></div>
+              </div>
+
+              <!-- blocco griglia -->
+              <div class="col-12 col-md-3">
+                <div class="-lc-col-content"></div>
+              </div>
             </div>
           </div>
         </div>
