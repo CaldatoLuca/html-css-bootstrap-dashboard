@@ -3,15 +3,13 @@
 !HEADER
 ?---------
 */
-.debug header {
-  background-color: red;
-}
+
 /*
 ?---------
 !MAIN
 ?---------
 */
-.debug nav {
+.debug main nav {
   background-color: blue;
   width: 100px;
 }

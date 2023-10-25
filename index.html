@@ -32,7 +32,57 @@
   </head>
   <body class="debug">
     <!-- *header del sito -->
-    <header class="fixed-top"></header>
+    <header
+      class="fixed-top d-flex align-items-center justify-content-between px-4"
+    >
+      <!-- ?logo del sito -->
+      <div class="-lc-header-logo flex-shrink-1 pe-2">
+        <img
+          class="d-lg-none img-fluid height-100"
+          src="img/mobile-logo.png"
+          alt="logo mobile"
+          width="35px"
+        />
+        <img
+          class="d-none d-lg-inline-block img-fluid"
+          src="img/logo.svg"
+          alt="logo"
+        />
+      </div>
+      <!-- ?logo del sito/ -->
+
+      <!-- ?navbar -->
+      <nav class="navbar flex-grow-1">
+        <div class="container-fluid d-inline-block">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </nav>
+      <!-- ?navbar/ -->
+
+      <!-- ?header icons -->
+      <ul class="d-flex list-unstyled align-items-center mb-0">
+        <li><i class="fa-solid fa-list d-none d-lg-inline-block px-2"></i></li>
+        <li>
+          <i
+            class="fa-solid fa-circle-question d-none d-lg-inline-block px-2"
+          ></i>
+        </li>
+        <li>
+          <i
+            class="fa-solid fa-ellipsis-vertical d-none d-lg-inline-block px-2"
+          ></i>
+        </li>
+        <li><i class="fa-solid fa-bell ps-2 text-warning"></i></li>
+      </ul>
+      <!-- ?header icons/ -->
+    </header>
     <!-- *header del sito/ -->
 
     <!-- *corpo principale della pagina -->

@@ -1,3 +1,22 @@
 @import "_partials/common.css";
 @import "_partials/debug.css";
 @import "_partials/typho.css";
+
+/*
+?---------
+!PALETTE
+?---------
+*/
+:root {
+  --main-white: #f8f9fa;
+  --icon-button-grey: #5b5858;
+}
+
+/*
+?---------
+!HEADER
+?---------
+*/
+header {
+  background-color: var(--main-white);
+}
