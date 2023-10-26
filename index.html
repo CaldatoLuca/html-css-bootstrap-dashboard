@@ -172,7 +172,7 @@
                   class="-lc-col-content d-flex flex-wrap align-items-center"
                 >
                   <div class="me-3">Nuovo studente</div>
-                  <!-- ?OFFCANVAS -->
+
                   <button
                     class="btn btn-outline-light"
                     type="button"
@@ -182,16 +182,16 @@
                   >
                     <i class="fa-solid fa-plus"></i>
                   </button>
-
+                  <!-- ?OFFCANVAS -->
                   <div
-                    class="offcanvas offcanvas-start"
+                    class="offcanvas offcanvas-end"
                     tabindex="-1"
                     id="offcanvasExample"
                     aria-labelledby="offcanvasExampleLabel"
                   >
                     <div class="offcanvas-header">
                       <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                        Offcanvas
+                        Inserisci un nuovo studente
                       </h5>
                       <button
                         type="button"
@@ -201,33 +201,109 @@
                       ></button>
                     </div>
                     <div class="offcanvas-body">
-                      <div>
-                        Some text as placeholder. In real life you can have the
-                        elements you have chosen. Like, text, images, lists,
-                        etc.
-                      </div>
-                      <div class="dropdown mt-3">
-                        <button
-                          class="btn btn-secondary dropdown-toggle"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                        >
-                          Dropdown button
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li>
-                            <a class="dropdown-item" href="#">Another action</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Something else here</a
+                      <!-- !form -->
+                      <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="name" class="form-label">Nome</label>
+                          <input
+                            type="text"
+                            class="form-control shadow-none"
+                            id="name"
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label for="cognome" class="form-label"
+                            >Cognome</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control shadow-none"
+                            id="cognome"
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label for="email" class="form-label">Email</label>
+                          <div class="input-group">
+                            <span
+                              class="input-group-text text-bg-secondary"
+                              id="basic-addon1"
+                              >@</span
                             >
-                          </li>
-                        </ul>
-                      </div>
+                            <input
+                              type="email"
+                              class="form-control shadow-none"
+                              id="email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="password" class="form-label"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control shadow-none"
+                            id="password"
+                          />
+                        </div>
+                        <div class="col-12">
+                          <label for="indirizzo" class="form-label"
+                            >Indirizzo</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control shadow-none"
+                            id="indirizzo"
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label for="citta" class="form-label">Città</label>
+                          <input
+                            type="text"
+                            class="form-control shadow-none"
+                            id="citta"
+                          />
+                        </div>
+                        <div class="col-md-4">
+                          <label for="stato" class="form-label">Stato</label>
+                          <select id="stato" class="form-select shadow-none">
+                            <option selected="">Italia</option>
+                            <option>Spagna</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="cap" class="form-label">CAP</label>
+                          <input
+                            type="text"
+                            class="form-control shadow-none"
+                            id="cap"
+                          />
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input shadow-none"
+                              type="checkbox"
+                              id="gridCheck"
+                            />
+                            <label class="form-check-label" for="gridCheck">
+                              Seleziona per proseguire
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">
+                            Salva
+                          </button>
+                          <button type="reset" class="btn btn-warning">
+                            Svuota
+                          </button>
+                        </div>
+                      </form>
+                      <!-- !form/ -->
                     </div>
                   </div>
+
                   <!-- ?OFFCANVAS -->
                 </div>
               </div>

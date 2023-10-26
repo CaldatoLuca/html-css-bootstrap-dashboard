@@ -63,9 +63,24 @@ main .-lc-left-menu a:hover {
   background-color: var(--icon-button-grey);
 }
 /* !dashboard */
+/* ?top-dashboard */
 main .-lc-dashboard .-lc-dashboard-top {
   background-color: var(--blue-200);
 }
 main .-lc-dashboard .-lc-dashboard-top .-lc-col-content .badge {
   background-color: var(--blue-300);
+}
+main .-lc-dashboard-top .offcanvas {
+  width: 100vw;
+}
+
+/*
+?---------
+!RESPONSIVE
+?---------
+*/
+@media screen and (min-width: 960px) {
+  main .-lc-dashboard-top .offcanvas {
+    width: 50vw;
+  }
 }
