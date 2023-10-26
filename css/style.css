@@ -20,6 +20,7 @@
 /* !variable */
 :root {
   --header-h: 4.375rem;
+  --class-avatar-w: 2.1875rem;
 }
 
 /*
@@ -74,6 +75,13 @@ main .-lc-dashboard-top .offcanvas {
   width: 100vw;
 }
 
+/* ?bottom-dashboard */
+main .-lc-dashboard-bottom .-lc-class-avatar {
+  width: var(--class-avatar-w);
+}
+main .-lc-dashboard-bottom table tr {
+  line-height: var(--class-avatar-w);
+}
 /*
 ?---------
 !RESPONSIVE
