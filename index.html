@@ -38,10 +38,9 @@
       <!-- ?logo del sito -->
       <div class="-lc-header-logo flex-shrink-1 pe-2">
         <img
-          class="d-lg-none img-fluid height-100"
+          class="-lc-logo-mobile d-lg-none img-fluid height-100"
           src="img/mobile-logo.png"
           alt="logo mobile"
-          width="35px"
         />
         <img
           class="d-none d-lg-inline-block img-fluid"
@@ -52,13 +51,18 @@
       <!-- ?logo del sito/ -->
 
       <!-- ?navbar -->
-      <nav class="navbar flex-grow-1">
+      <nav class="navbar flex-grow-1 p-0">
         <div class="container-fluid d-inline-block">
           <form class="d-flex" role="search">
+            <span
+              class="input-group-text border-end-0 rounded-end-0 border-secondary-subtle -lc-navbar-bg"
+              id="basic-addon1"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
             <input
-              class="form-control me-2"
+              class="form-control border-start-0 rounded-start-0 shadow-none border-secondary-subtle -lc-navbar-bg"
               type="search"
-              placeholder="Search"
+              placeholder="Prova a cercare: Lezioni di Laravel"
               aria-label="Search"
             />
           </form>
@@ -68,18 +72,42 @@
 
       <!-- ?header icons -->
       <ul class="d-flex list-unstyled align-items-center mb-0">
-        <li><i class="fa-solid fa-list d-none d-lg-inline-block px-2"></i></li>
         <li>
-          <i
-            class="fa-solid fa-circle-question d-none d-lg-inline-block px-2"
-          ></i>
+          <a href=""
+            ><i class="fa-solid fa-list d-none d-lg-inline-block px-2"></i
+          ></a>
         </li>
         <li>
-          <i
-            class="fa-solid fa-ellipsis-vertical d-none d-lg-inline-block px-2"
-          ></i>
+          <a href=""
+            ><i
+              class="fa-solid fa-circle-question d-none d-lg-inline-block px-2"
+            ></i
+          ></a>
         </li>
-        <li><i class="fa-solid fa-bell ps-2 text-warning"></i></li>
+        <li>
+          <a href="">
+            <i
+              class="fa-solid fa-ellipsis-vertical d-none d-lg-inline-block px-2"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle p-0 border-0"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <a href=""><i class="fa-solid fa-bell ps-2 text-warning"></i></a>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profilo</a></li>
+              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </li>
       </ul>
       <!-- ?header icons/ -->
     </header>
@@ -88,37 +116,43 @@
     <!-- *corpo principale della pagina -->
     <main class="d-flex">
       <!-- ?navbar a sinistra -->
-      <div class="-lc-left-menu flex-shrink-0 p-4 fw-bold">
-        <ul class="list-unstyled d-flex flex-column mb-0 h-100">
+      <div class="-lc-left-menu flex-shrink-0 py-4 px-3 fw-bold">
+        <ul
+          class="list-unstyled d-flex flex-column mb-0 h-100 text-center text-lg-start"
+        >
           <!-- elemento -->
-          <li
-            class="d-flex justify-content-between align-items-center mb-3 mb-lg-2"
-          >
-            <i class="fa-solid fa-house me-lg-3"></i>
-            <span class="d-none d-lg-inline-block">Home</span>
+          <li class="mb-3 mb-lg-2">
+            <a class="text-white text-decoration-none p-2" href="index.html"
+              ><i class="fa-solid fa-house me-lg-3"></i>
+              <span class="d-none d-lg-inline-block">Home</span></a
+            >
           </li>
           <!-- elemento -->
 
           <!-- elemento -->
-          <li
-            class="d-flex justify-content-between align-items-center mb-3 mb-lg-2"
-          >
-            <i class="fa-solid fa-chart-simple me-lg-3"></i>
-            <span class="d-none d-lg-inline-block">Stats</span>
+          <li class="mb-3 mb-lg-2">
+            <a class="text-white text-decoration-none p-2" href="index.html">
+              <i class="fa-solid fa-chart-simple me-lg-3"></i>
+              <span class="d-none d-lg-inline-block">Stats</span></a
+            >
           </li>
           <!-- elemento -->
 
           <!-- elemento -->
-          <li class="d-flex justify-content-between align-items-center">
-            <i class="fa-solid fa-signal me-lg-3"></i>
-            <span class="d-none d-lg-inline-block">Signals</span>
+          <li>
+            <a class="text-white text-decoration-none p-2" href="index.html"
+              ><i class="fa-solid fa-signal me-lg-3"></i>
+              <span class="d-none d-lg-inline-block">Signals</span></a
+            >
           </li>
           <!-- elemento -->
 
           <!-- elemento -->
-          <li class="mt-auto d-flex justify-content-between align-items-center">
-            <i class="fa-solid fa-gear me-lg-2"></i>
-            <span class="d-none d-lg-inline-block">Admin</span>
+          <li class="mt-auto">
+            <a class="text-white text-decoration-none p-2" href="index.html"
+              ><i class="fa-solid fa-gear me-lg-2"></i>
+              <span class="d-none d-lg-inline-block">Admin</span></a
+            >
           </li>
           <!-- elemento -->
         </ul>
@@ -129,60 +163,11 @@
       <div class="-lc-dashboard overflow-y-auto flex-grow-1">
         <!-- !top-dashboard -->
         <div class="-lc-dashboard-top py-2">
-          <div class="container-fluid px-3">
+          <div class="container-fluid px-3 text-white">
             <!-- !griglia -->
             <div class="row align-items-center">
               <!-- blocco griglia -->
-              <div class="col-12 col-md-6">
-                <div class="-lc-col-content">
-                  <div>
-                    <div class="fs-1 d-inline-block me-2">Boolean</div>
-                    <span class="badge rounded-pill">Piano blaze</span>
-                  </div>
-                  <div>
-                    <nav
-                      style="--bs-breadcrumb-divider: '>'"
-                      aria-label="breadcrumb"
-                    >
-                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                          <a href="#">
-                            <span class="badge rounded-pill">3 app</span>
-                          </a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">
-                          <span
-                            class="badge rounded-pill d-none d-md-inline-block"
-                            >Boolean mobile app</span
-                          >
-                          <span
-                            class="badge rounded-pill d-none d-md-inline-block"
-                            >Boolean web app</span
-                          >
-                          <span
-                            class="badge rounded-pill d-none d-md-inline-block"
-                            >Boolean blog app</span
-                          >
-                          <span class="badge rounded-pill d-md-none"
-                            ><i class="fa-solid fa-plus"></i
-                          ></span>
-                        </li>
-                      </ol>
-                    </nav>
-                  </div>
-                </div>
-              </div>
-
-              <!-- blocco griglia -->
-              <div class="col-12 col-md-3">
-                <div class="-lc-col-content">
-                  <div>Studenti online negli ultimi 30 minuti</div>
-                  <div class="fs-1">125</div>
-                </div>
-              </div>
-
-              <!-- blocco griglia -->
-              <div class="col-6 col-md-3 align-self-start py-2">
+              <div class="col-6 col-md-3 align-self-start py-2 order-md-1">
                 <div
                   class="-lc-col-content d-flex flex-wrap align-items-center"
                 >
@@ -244,6 +229,55 @@
                     </div>
                   </div>
                   <!-- ?OFFCANVAS -->
+                </div>
+              </div>
+
+              <!-- blocco griglia -->
+              <div class="col-12 col-md-6">
+                <div class="-lc-col-content">
+                  <div>
+                    <div class="fs-1 d-inline-block me-2">Boolean</div>
+                    <span class="badge rounded-pill">Piano blaze</span>
+                  </div>
+                  <div>
+                    <nav
+                      style="--bs-breadcrumb-divider: '>>'"
+                      aria-label="breadcrumb"
+                    >
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                          <a href="#">
+                            <span class="badge rounded-pill">3 app</span>
+                          </a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                          <span
+                            class="badge rounded-pill d-none d-md-inline-block"
+                            >Boolean mobile app</span
+                          >
+                          <span
+                            class="badge rounded-pill d-none d-md-inline-block"
+                            >Boolean web app</span
+                          >
+                          <span
+                            class="badge rounded-pill d-none d-md-inline-block"
+                            >Boolean blog app</span
+                          >
+                          <span class="badge rounded-pill d-md-none"
+                            ><i class="fa-solid fa-plus"></i
+                          ></span>
+                        </li>
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+
+              <!-- blocco griglia -->
+              <div class="col-12 col-md-3">
+                <div class="-lc-col-content">
+                  <div>Studenti online negli ultimi 30 minuti</div>
+                  <div class="fs-1">125</div>
                 </div>
               </div>
             </div>

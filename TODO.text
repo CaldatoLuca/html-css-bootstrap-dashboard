@@ -1,16 +1,7 @@
-/*
-?---------
-!HEADER
-?---------
-*/
-
-NAVBAR -togliere box-shadow- -inserire icona lente- -menu :active sulla campanella(bootstrap component) -scrollbar va sopra?-
 
 /*
 ?---------
 !MAIN
 ?---------
 */
-NAVBAR -hover sui li-
-
-DASHBOARD-TOP -vedere bene il comportamneto di bottoni al restringersi della pagina- -fare form nel canvas-
+DASHBOARD-TOP -vedere bene il comportamneto di bottoni al restringersi della pagina- -fare form nel canvas- 

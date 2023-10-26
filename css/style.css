@@ -4,16 +4,22 @@
 
 /*
 ?---------
-!PALETTE
+!VARIABLES
 ?---------
 */
+/* !palette */
 :root {
   --main-white: #f8f9fa;
   --icon-button-grey: #5b5858;
+  --light-grey: #e5e5e5;
   --blue-600: #051e34;
   --blue-500: #12293e;
   --blue-300: #165bba;
   --blue-200: #1b72e8;
+}
+/* !variable */
+:root {
+  --header-h: 4.375rem;
 }
 
 /*
@@ -23,21 +29,39 @@
 */
 header {
   background-color: var(--main-white);
+  height: var(--header-h);
 }
 header i {
   color: var(--icon-button-grey);
+}
+header .-lc-logo-mobile {
+  width: 3.125rem;
+}
+header .-lc-navbar-bg {
+  background-color: var(--light-grey);
+}
+header .dropdown-toggle::after {
+  content: none;
 }
 /*
 ?---------
 !MAIN
 ?---------
 */
+main {
+  height: calc(100vh - var(--header-h));
+}
 /* !nav */
 main .-lc-left-menu {
   background-image: url("../img/sidebar-bg.png");
   background-color: var(--blue-600);
 }
-
+main .-lc-left-menu i {
+  width: 1.5625rem;
+}
+main .-lc-left-menu a:hover {
+  background-color: var(--icon-button-grey);
+}
 /* !dashboard */
 main .-lc-dashboard .-lc-dashboard-top {
   background-color: var(--blue-200);
