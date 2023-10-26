@@ -17,3 +17,12 @@
   background-color: saddlebrown;
   line-height: 1000px;
 } */
+
+/* .debug .-lc-dashboard-bottom .row {
+  height: 200px;
+  width: 300px;
+  background-color: rebeccapurple;
+} */
+.col-12 div {
+  border: 2px solid black;
+}
